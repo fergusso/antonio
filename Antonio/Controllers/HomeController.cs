@@ -10,9 +10,10 @@ namespace Antonio.Controllers
 {
     public class HomeController : Controller
     {
+        private static int Number = 0;
         public IActionResult Index()
         {
-            return View();
+            return View(Number++);
         }
 
         public IActionResult About()
